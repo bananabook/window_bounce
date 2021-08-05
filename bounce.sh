@@ -12,19 +12,6 @@ Y_PLACE=$(xwininfo -id $WINDOW|grep "Absolute upper-left Y"|awk '{print $4}')
 WAITTIME=0.001
 STEP=2
 
-moveup(){
-	Y_PLACE=`expr $Y_PLACE - $STEP`
-	xdotool windowmove $WINDOW $X_PLACE $Y_PLACE
-}
-movedown(){
-	Y_PLACE=`expr $Y_PLACE + $STEP`
-	xdotool windowmove $WINDOW $X_PLACE $Y_PLACE
-}
-moveupleft(){
-	Y_PLACE=`expr $Y_PLACE - $STEP`
-	X_PLACE=`expr $X_PLACE - $STEP`
-	xdotool windowmove $WINDOW $X_PLACE $Y_PLACE
-}
 move(){
 	if [[ $1 == *u* ]]; then
 		Y_PLACE=`expr $Y_PLACE - $STEP`
