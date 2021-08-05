@@ -93,26 +93,3 @@ do
 		move ur
 	fi
 done
-
-
-#MOVE=0
-#while true
-#do
-#	if [ $MOVE == 0 ]; then
-#		if [ $Y_PLACE -ge 0 ] && [ $X_PLACE -ge 0 ]; then
-#			move ul
-#		else
-#			MOVE=1
-#		fi
-#	elif [ $MOVE == 1 ]; then
-#		BOTTOM=`expr $Y_PLACE + $HEIGHT`
-#		if [ $BOTTOM -le 1080 ]; then
-#			move dl
-#		else
-#			MOVE=0
-#		fi
-#	elif [ $MOVE ==2 ]; then
-#	ls
-#		
-#	fi
-#done
