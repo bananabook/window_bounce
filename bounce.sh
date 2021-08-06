@@ -1,3 +1,10 @@
+## Parameters
+# how long to wait between each step of moving the window?
+WAITTIME=0.001
+# how long are the stepe (in pixels)?
+STEP=2
+
+
 ## get window id
 
 ## OPTIONAL LINE
@@ -19,13 +26,6 @@ HEIGHT=$(xwininfo -id $WINDOW|grep Height|awk '{print $2}')
 # and where is the window?
 X_PLACE=$(xwininfo -id $WINDOW|grep "Absolute upper-left X"|awk '{print $4}')
 Y_PLACE=$(xwininfo -id $WINDOW|grep "Absolute upper-left Y"|awk '{print $4}')
-
-
-## Parameters
-# how long to wait between each step of moving the window?
-WAITTIME=0.001
-# how long are the stepe (in pixels)?
-STEP=2
 
 
 ## FUNCTION move
