@@ -1,8 +1,17 @@
 ## Parameters
 # how long to wait between each step of moving the window?
 WAITTIME=0.001
+
 # how long are the stepe (in pixels)?
 STEP=2
+
+# Starting direction
+# MOVE==0 up   left
+# MOVE==1 down left
+# MOVE==2 down right
+# MOVE==3 up   right
+MOVE=0
+
 
 
 ## get window id
@@ -52,10 +61,6 @@ move(){
 
 ## FUNCTION update direction
 # checks for collisions and updates the movement direction accordingly
-# MOVE==0 up   left
-# MOVE==1 down left
-# MOVE==2 down right
-# MOVE==3 up   right
 updatedirection(){
 ## use the follwong lines if you constatntly want to update what the size of the window is
 # if you resize the window as it is moving these lines will allow for collisions with the new window size
@@ -113,9 +118,6 @@ updatedirection(){
 
 
 ## Main
-
-## Starting direction
-MOVE=0
 
 ## main loop
 # each loop we update the direction and then perform the direction
