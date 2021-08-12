@@ -9,3 +9,6 @@ bash script to have a window bounce around the screen
 2. click on the window you want to bounce. It can be the terminal window you run the script in, but it can be any other window as well. 
 3. the window you selected now should be bouncing around.
 4. Press Ctrl+C in the terminal window you ran the script in to stop the script
+
+# Known Issues
+In gnome there seems to be an offset, that makes the windows bounce before they touch the actual border of the screen, also the windows behave unexpectedly when they interact with the sidebar. 
